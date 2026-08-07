@@ -175,23 +175,29 @@ class Account:
         self.type = type
 ```
 
-# الدوال الرئيسية
+---
 
-الدالة الوصف
-save_accounts_to_file() حفظ بيانات الحسابات في ملف accounts.txt
-load_accounts_from_file() تحميل بيانات الحسابات من ملف accounts.txt
-login() تسجيل الدخول إلى النظام
-logout() تسجيل الخروج من النظام
-change_password() تغيير كلمة المرور
-deposit() إيداع مبلغ في الحساب
-withdraw() سحب مبلغ من الحساب
-create_branch_account() إنشاء حساب فرع جديد
-create_normal_account() إنشاء حساب عميل جديد
-read_accounts() عرض جميع الحسابات
-edit_account() تعديل بيانات حساب
-delete_account() حذف حساب
+## الدوال الرئيسية
+
+| الدالة | الوصف |
+|---------|-----------|
+| **save_accounts_to_file()** | حفظ بيانات الحسابات في ملف accounts.txt |
+| **load_accounts_from_file()** | تحميل بيانات الحسابات من ملف accounts.txt |
+| **login()** | تسجيل الدخول إلى النظام |
+| **logout()** | تسجيل الخروج من النظام |
+| **change_password()** | تغيير كلمة المرور |
+| **deposit()** |  إيداع مبلغ في الحساب |
+| **withdraw()** | سحب مبلغ من الحساب |
+| **create_branch_account()** | إنشاء حساب فرع جديد |
+| **create_normal_account()** | إنشاء حساب عميل جديد |
+| **read_accounts()** | عرض جميع الحسابات |
+| **edit_account()** | تعديل بيانات حساب |
+| **delete_account()** | حذف حساب |
+
 
 ---
+
+
 
 # 📝 أمثلة على الاستخدام
 
