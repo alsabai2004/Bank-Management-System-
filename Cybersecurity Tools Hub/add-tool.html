@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة أدوات الأمن السيبراني | إضافة أداة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">CyberTools Hub 🛡️</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="tools.html">استعراض الأدوات</a></li>
+                <li><a href="add-tool.html" class="active">إضافة أداة</a></li>
+                <li><a href="about.html">عن الفريق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <section class="form-card">
+            <h2>إضافة أداة سيبرانية جديدة</h2>
+            <p class="form-subtitle">قم بتعبئة بيانات الأداة لتخزينها في المرجع العام للمنصة</p>
+            
+            <form id="toolForm">
+                <div class="input-group">
+                    <label for="toolName">اسم الأداة (مثال: Nmap):</label>
+                    <input type="text" id="toolName" placeholder="أدخل اسم الأداة...">
+                </div>
+
+                <div class="input-group">
+                    <label for="toolCategory">تصنيف الأداة:</label>
+                    <select id="toolCategory">
+                        <option value="">-- اختر التصنيف --</option>
+                        <option value="جمع المعلومات">جمع المعلومات (Reconnaissance)</option>
+                        <option value="فحص الثغرات">فحص الثغرات (Vulnerability Scanning)</option>
+                        <option value="تحليل الشبكات">تحليل الشبكات (Sniffing & Spoofing)</option>
+                        <option value="اختبار الاختراق">اختبار اختراق (Penetration Testing)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="toolDesc">وصف الأداة وظيفتها:</label>
+                    <textarea id="toolDesc" rows="3" placeholder="اكتب هنا شرحاً موجزاً عن عمل الأداة..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="toolCommand">أمر التشغيل الأساسي (مثال: nmap -sV):</label>
+                    <input type="text" id="toolCommand" placeholder="أدخل أمر التشغيل الشائع...">
+                </div>
+
+                <button type="submit" id="saveBtn">حفظ الأداة في الـ LocalStorage 💾</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | فريق هندسة الشبكات والأمن السيبراني</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
